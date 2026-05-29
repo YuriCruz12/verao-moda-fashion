@@ -3,12 +3,21 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
 
+/* .navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+} */
 .navbar {
     display: flex;
     /* flex-flow: row wrap; */
@@ -23,11 +32,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap:20px;
-    /* flex: 70%;
-    border:5px solid #ccc;
-    text-align: right;
-    padding: 20px; */
+    gap: 20px;
 }
 
 .nav-links a {
@@ -88,7 +93,6 @@ li.dropdown {
 
 .logo {
     flex: 20%;
-    /* border: 1px solid red; */
     text-align: left;
     margin-left: 10%;
 }
@@ -98,8 +102,6 @@ li.dropdown {
     font-size: 30px;
     color: #1d7f87;
 }
-
-
 
 #botao {
     background: #1d7f87;
@@ -115,81 +117,24 @@ li.dropdown {
     background: #ea7d5e;
 }
 
-.header {
+.header-biquini {
     display: flex;
-    flex-flow: row wrap;
-    background: white;
-    justify-content: center;
-    align-items: center;
+    /* border: 1px solid black; */
     padding-top: 100px;
-}
-
-.headline {
-    margin-left: 10%;
-    flex: 40%;
-    /* border: 1px solid black; */
-}
-
-.headline h2 {
-    font-weight: 900;
-    font-size: 20px;
-    color: #1d7f87;
-    padding: 0;
-    margin: 0;
-}
-
-.headline p {
-    color: gray;
-    text-align: left;
-}
-
-.contact-btn {
-    background: #ea7d5e;
-    padding: 20px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.contact-btn:hover {
-    background: #1d7f87;
-}
-
-.img-headline {
-    margin-right: 10%;
-    flex: 40%;
-    /* border: 1px solid red; */
-    text-align: center;
-}
-
-section {
-    display: inline-block;
-    margin-top: 80px;
-    /* border: 1px solid black; */
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 5%;
-    text-align: center;
-   
-}
-
-section h2 {
+    background: #f3ae9b;
+    justify-content: center;
+    font-family: "Lobster", sans-serif;
+    font-size: 25px;
     width: 100%;
-    font-size: 50px;
-    margin: 0;
-    font-family:"Lobster", sans-serif;
-    font-weight: bold;
-    color: #1d7f87;
 }
 
-.servisos {
+.mostra-biquini {
     display: inline-block;
     margin-top: 5%;
 }
 
-.card {
+
+.biquini1 {
     display: inline-block;
     width: 30%;
     padding: 20px;
@@ -198,26 +143,29 @@ section h2 {
     border-radius: 10px;
     cursor: pointer;
 }
-.texto-oculto {
-    display: none;
+
+section {
+    display: inline-block;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    text-align: center;
 }
 
-.card:hover {
-    background: #ea7d5e;
-    color: white;
-    padding: 40px;
+section h3{
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+    font-family:"Lobster", sans-serif;
+    font-weight: bold;
+    color: #1d7f87;
 }
 
-.card:hover img {
-    display: none;
-}
-
-.card:hover .card-text {
-    display: none;
-}
-
-.card:hover .texto-oculto {
-    display: block;
+section h4 {
+    margin-top: 0;
+    font-family:"Lobster", sans-serif;
+    font-weight: bold;
+    color: #1d7f87;
 }
 
 footer {
@@ -225,7 +173,7 @@ footer {
     height: 400px;
     background-image: linear-gradient(180deg, #1d7f87, #0d3e43, black);
     text-align: center;
-    border-top: 5px solid #ea7d5e
+    border-top: 5px solid #ea7d5e;
 }
 
 .logo-rodape {
@@ -244,6 +192,7 @@ footer {
     right: 5px;
     width: 100px;
 }
+
 
 /* Estilização para Celular (telas até 768px) */
 @media (max-width: 768px) {
@@ -314,5 +263,8 @@ footer {
     }
     section .biquini1 {
        width: 100%;
-    } 
+    }
+    .header-biquini {
+        padding: 0;
+    }
 }
